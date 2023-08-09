@@ -30,3 +30,4 @@ C:\Users\Nicolas.asilva10\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\P
 C:\Users\Nicolas.asilva10\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.csproj.CoreCompileInputs.cache
 C:\Users\Nicolas.asilva10\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.exe
 C:\Users\Nicolas.asilva10\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.pdb
+C:\Users\Nicolas.asilva10\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.frmPesquisarFuncionarios.resources

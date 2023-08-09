@@ -61,6 +61,7 @@ namespace PadariaCarmel
             this.lblNome = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
+            this.btnCarregaCEP = new System.Windows.Forms.Button();
             this.pnlCRUD.SuspendLayout();
             this.pnlFuncionarios.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +121,7 @@ namespace PadariaCarmel
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnExcluir
             // 
@@ -178,6 +180,7 @@ namespace PadariaCarmel
             // pnlFuncionarios
             // 
             this.pnlFuncionarios.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pnlFuncionarios.Controls.Add(this.btnCarregaCEP);
             this.pnlFuncionarios.Controls.Add(this.cbbEstado);
             this.pnlFuncionarios.Controls.Add(this.lblEstado);
             this.pnlFuncionarios.Controls.Add(this.mskCEP);
@@ -230,6 +233,7 @@ namespace PadariaCarmel
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(91, 33);
             this.mskCEP.TabIndex = 11;
+            this.mskCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskCEP_KeyDown);
             // 
             // lblCEP
             // 
@@ -393,6 +397,15 @@ namespace PadariaCarmel
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
+            // btnCarregaCEP
+            // 
+            this.btnCarregaCEP.Location = new System.Drawing.Point(606, 387);
+            this.btnCarregaCEP.Name = "btnCarregaCEP";
+            this.btnCarregaCEP.Size = new System.Drawing.Size(124, 30);
+            this.btnCarregaCEP.TabIndex = 21;
+            this.btnCarregaCEP.Text = "Carrega CEP";
+            this.btnCarregaCEP.UseVisualStyleBackColor = true;
+            // 
             // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,5 +460,6 @@ namespace PadariaCarmel
         private System.Windows.Forms.Label lblCidade;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label lblBairro;
+        private System.Windows.Forms.Button btnCarregaCEP;
     }
 }
