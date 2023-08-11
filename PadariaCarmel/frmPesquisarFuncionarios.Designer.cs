@@ -31,10 +31,10 @@ namespace PadariaCarmel
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesquisarFuncionarios));
             this.grbPesquisar = new System.Windows.Forms.GroupBox();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.lblDescricao = new System.Windows.Forms.Label();
-            this.rdbNome = new System.Windows.Forms.RadioButton();
             this.rdbCodigo = new System.Windows.Forms.RadioButton();
+            this.rdbNome = new System.Windows.Forms.RadioButton();
+            this.lblDescricao = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.lstPesquisar = new System.Windows.Forms.ListBox();
@@ -55,21 +55,15 @@ namespace PadariaCarmel
             this.grbPesquisar.TabStop = false;
             this.grbPesquisar.Text = "Pesquisar por";
             // 
-            // txtDescricao
+            // rdbCodigo
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(92, 91);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(237, 26);
-            this.txtDescricao.TabIndex = 4;
-            // 
-            // lblDescricao
-            // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Location = new System.Drawing.Point(6, 91);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(80, 20);
-            this.lblDescricao.TabIndex = 3;
-            this.lblDescricao.Text = "Descricao";
+            this.rdbCodigo.AutoSize = true;
+            this.rdbCodigo.Location = new System.Drawing.Point(0, 25);
+            this.rdbCodigo.Name = "rdbCodigo";
+            this.rdbCodigo.Size = new System.Drawing.Size(77, 24);
+            this.rdbCodigo.TabIndex = 1;
+            this.rdbCodigo.Text = "Código";
+            this.rdbCodigo.UseVisualStyleBackColor = true;
             // 
             // rdbNome
             // 
@@ -80,26 +74,30 @@ namespace PadariaCarmel
             this.rdbNome.TabIndex = 2;
             this.rdbNome.Text = "Nome";
             this.rdbNome.UseVisualStyleBackColor = true;
-            this.rdbNome.CheckedChanged += new System.EventHandler(this.rdbNome_CheckedChanged);
             // 
-            // rdbCodigo
+            // lblDescricao
             // 
-            this.rdbCodigo.AutoSize = true;
-            this.rdbCodigo.Location = new System.Drawing.Point(0, 25);
-            this.rdbCodigo.Name = "rdbCodigo";
-            this.rdbCodigo.Size = new System.Drawing.Size(77, 24);
-            this.rdbCodigo.TabIndex = 1;
-            this.rdbCodigo.Text = "Código";
-            this.rdbCodigo.UseVisualStyleBackColor = true;
-            this.rdbCodigo.CheckedChanged += new System.EventHandler(this.rdbCodigo_CheckedChanged);
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Location = new System.Drawing.Point(6, 91);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(80, 20);
+            this.lblDescricao.TabIndex = 3;
+            this.lblDescricao.Text = "Descricao";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(92, 91);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(237, 26);
+            this.txtDescricao.TabIndex = 4;
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisar.Location = new System.Drawing.Point(524, 209);
+            this.btnPesquisar.Location = new System.Drawing.Point(524, 68);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(214, 41);
+            this.btnPesquisar.Size = new System.Drawing.Size(139, 42);
             this.btnPesquisar.TabIndex = 5;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -109,9 +107,9 @@ namespace PadariaCarmel
             // 
             this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
             this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpar.Location = new System.Drawing.Point(524, 351);
+            this.btnLimpar.Location = new System.Drawing.Point(524, 117);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(214, 44);
+            this.btnLimpar.Size = new System.Drawing.Size(139, 42);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -120,11 +118,10 @@ namespace PadariaCarmel
             // lstPesquisar
             // 
             this.lstPesquisar.FormattingEnabled = true;
-            this.lstPesquisar.Location = new System.Drawing.Point(107, 209);
+            this.lstPesquisar.Location = new System.Drawing.Point(524, 165);
             this.lstPesquisar.Name = "lstPesquisar";
-            this.lstPesquisar.Size = new System.Drawing.Size(411, 186);
+            this.lstPesquisar.Size = new System.Drawing.Size(193, 186);
             this.lstPesquisar.TabIndex = 7;
-            this.lstPesquisar.SelectedIndexChanged += new System.EventHandler(this.lstPesquisar_SelectedIndexChanged);
             // 
             // frmPesquisarFuncionarios
             // 

@@ -31,6 +31,7 @@ namespace PadariaCarmel
                 lstPesquisar.Items.Clear();
                 lstPesquisar.Items.Add(txtDescricao.Text);
             }
+
             if (rdbNome.Checked)
             {
                 txtDescricao.Focus();
