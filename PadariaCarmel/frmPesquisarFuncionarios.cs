@@ -15,6 +15,7 @@ namespace PadariaCarmel
         public frmPesquisarFuncionarios()
         {
             InitializeComponent();
+            desativarCampos();
         }
 
         private void frmPesquisarFuncionarios_Load(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace PadariaCarmel
                 lstPesquisar.Items.Add(txtDescricao.Text);
             }
 
-      
+
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace PadariaCarmel
             limparCampos();
         }
 
-       
+
         public void limparCampos()
         {
             rdbCodigo.Checked = false;
@@ -55,6 +56,41 @@ namespace PadariaCarmel
             txtDescricao.Focus();
         }
 
+        public void desativarCampos()
+        {
+            txtDescricao.Enabled = false;
+            btnPesquisar.Enabled = false;
+            btnLimpar.Enabled = false;
+            limparCampos();
+        }
+        public void ativarCampos()
+        {
+            txtDescricao.Enabled = true;
+            btnPesquisar.Enabled = true;
+            btnLimpar.Enabled = true;
+            txtDescricao.Focus();
+
+        }
+
+        private void rdbCodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            ativarCampos();
+        }
+
+        private void rdbNome_CheckedChanged(object sender, EventArgs e)
+        {
+            ativarCampos();
+        }
+
+        private void lstPesquisar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+           string nome = lstPesquisar.SelectedItem.ToString();
+            frmFuncionarios abrir = new frmFuncionarios(nome);
+            abrir.Show();
+            this.Hide();
+        }
+     
 
     }
 }

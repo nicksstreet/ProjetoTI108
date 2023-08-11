@@ -27,6 +27,12 @@ namespace PadariaCarmel
         {
             InitializeComponent();
         }
+        public frmFuncionarios(string nome)
+        {
+            InitializeComponent();
+            txtNome.Text = nome;
+
+        }
 
         private void frmFuncionarios_Load(object sender, EventArgs e)
         {
@@ -177,7 +183,8 @@ namespace PadariaCarmel
         {
 
             frmPesquisarFuncionarios abrir = new frmPesquisarFuncionarios();
-            abrir.ShowDialog();
+            abrir.Show();
+            this.Hide();
         }
     }
 }
